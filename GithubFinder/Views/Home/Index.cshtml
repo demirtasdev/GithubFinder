@@ -1,0 +1,42 @@
+﻿@{ 
+    Layout = null; 
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Starter Template · Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-cRAmF0wErT4D9dEBc36qB6pVu+KmLh516IoGWD/Gfm6FicBbyDuHgS4jmkQB8u1a" crossorigin="anonymous">
+</head>
+<body class="pt-5">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Github Finder</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarsExampleDefault" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main" class="container pt-5">
+
+        <div class="searchContainer">
+            <h1>Search Github Users</h1>
+            <p class="lead">Enter a user name to fetch a user's profile info and repos.</p>
+            <input type="text" id="searchUser" class="form-control" placeholder="Github Username..." />
+        </div>
+        <br/>
+        <div id="profile"></div>
+
+    </main><!-- /.container -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>
