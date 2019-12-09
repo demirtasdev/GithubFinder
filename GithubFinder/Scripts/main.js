@@ -11,7 +11,22 @@
             }
         }).done(function (user) {
             $("#profile").html(`
-                ${user.name}
+                <div class="Panel row">
+                    <div class="Heading col-12 table-bordered border-dark pt-2 rounded text-center">
+                        <h3 class="Title font-weight-bold"> ${user.name} </h3>
+                    </div>
+                    <div class="panel-body col-12 pt-2">
+                        <div class="Body row">
+                            <div class="col-md-3">
+                                <img class="img-thumbnail w-100 mb-1" src="${user.avatar_url}" />
+                                <a target="_blank" class="btn btn-primary w-100" href="${user.html_url}">View Profile</a>
+                            </div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             `);
         });
     });
